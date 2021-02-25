@@ -1,12 +1,12 @@
-export const dndApi = axios.create({
-  baseURL: "https://www.dnd5eapi.co/api/spells",
+export const pokeApi = axios.create({
+  baseURL: "https://pokeapi.co/api/v2/pokemon/",
   timeout: 10000
 })
 
 
 
 export const sandboxApi = axios.create({
-  baseURL: 'https://bcw-sandbox.herokuapp.com/api/class/spells/',
+  baseURL: 'https://bcw-sandbox.herokuapp.com/api/el/pokemon/',
   timeout: 10000
 })
 

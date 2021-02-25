@@ -1,4 +1,4 @@
-import Spell from "./Models/Spell.js"
+import Pokemon from "./Models/Pokemon.js"
 import Value from "./Models/Value.js"
 import { EventEmitter } from "./Utils/EventEmitter.js"
 import { isValidProp } from "./Utils/isValidProp.js"
@@ -6,11 +6,13 @@ import { isValidProp } from "./Utils/isValidProp.js"
 class AppState extends EventEmitter {
   /** @type {Value[]} */
   values = []
-  dndApiSpells = []
-  /**@type {Spell} */
-  activeSpell = null
-  /**@type {Spell[]} */
-  mySpells = []
+
+  pokeApiPokemons = []
+
+  /**@type {Pokemon} */
+  activePokemon = null
+  /**@type {Pokemon[]} */
+  myPokemons = []
 }
 
 export const ProxyState = new Proxy(new AppState(), {
